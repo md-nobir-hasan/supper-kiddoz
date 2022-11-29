@@ -150,7 +150,7 @@
                                 <a type="button" href="javascript:void(0)" class="product-order-btn cart-btn"
                                     id="{{ $product->id }}" data-bs-toggle="modal"
                                     data-bs-target="#product-{{ $product->id }}"
-                                    style='margin-top: 17px; background-color:#654eed'>ওর্ডার করুন
+                                    style='margin-top: 17px; background-color:#654eed'>অর্ডার করুন
                                 </a>
                                 {{-- data-bs-toggle="collapse" data-bs-target="#product-{{ $product->id }}"
                                         aria-expanded="false" aria-controls="product-{{ $product->id }}" --}}
@@ -179,7 +179,7 @@
                             <img class='delivary-image' src="{{ asset('assets/images/free-delivary.png') }}">
 
                             <div class='animation'>
-                                <span class=''>ডেলিভারি চার্জ ফ্রি সীমিত সময়ের জন্য </span>
+                                <span class=''>ডেলিভারি চার্জ প্রযোজ্য। </span>
                             </div>
 
                         </div>
@@ -260,7 +260,7 @@
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
                                                     data-bs-dismiss="modal">বন্ধ করুন</button>
-                                                <button type="submit" class="btn btn-primary">ওর্ডার নিশিত
+                                                <button type="submit" class="btn btn-primary">অর্ডার নিশিত
                                                     করুন</button>
                                             </div>
                                         </form>
@@ -282,31 +282,31 @@
         </div>
 
         <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
-            <span class="why-us-emoji">⭕</span>
+            <span class="why-us-emoji">🚗</span>
             <h1 class="why-us-div-des">
                 নবজাতক নিরাপদ ভ্রমণ বিছানা আমাদের এই সেফটি বেড এর সাথে পাচ্ছেন সোনামণির জন্য অত্যন্ত প্রয়োজনীয় ইউরিন ম্যাট ও পিলো। </h1>
         </div>
         <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
-            <span class="why-us-emoji">⭕</span>
+            <span class="why-us-emoji">😊</span>
             <h1 class="why-us-div-des">
                 খুব উন্নতমানের ম্যাটেরিয়েলে তৈরি ,একেবারে নতুন, ইউনিক এবং ভাল লাগার মত বেবি পন্য আমাদের এই সেফটি বেড।
             </h1>
         </div>
         <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
-            <span class="why-us-emoji">⭕</span>
+            <span class="why-us-emoji">✅</span>
             <h1 class="why-us-div-des">
                এটি ১০০% কটন কাপর দিয়ে তৈরি এবং ভিতরে নরম ফাইবার তুলা, যা সহজেই শুকিয়ে যায়।
             </h1>
         </div>
         <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
-            <span class="why-us-emoji">🔥</span>
+            <span class="why-us-emoji">⚡</span>
             <h1 class="why-us-div-des">
                যেহেতু নবজাতকের জন্য তৈরী কোয়ালিটি তে কোনো কম্প্রোমাইস করা হয়নি।
             </h1>
 
         </div>
         <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
-            <span class="why-us-emoji">🔥</span>
+            <span class="why-us-emoji">😍</span>
             <h1 class="why-us-div-des">
                একসাথে পাচ্ছেন নিউব্রণ সেফটি/ক্যারি বেড + পিলো + ইউরিন মেট।
             </h1>
