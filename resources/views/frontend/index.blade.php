@@ -176,7 +176,7 @@
                         </div>
                         <div class='delivary-img-section'>
 
-                            <img class='delivary-image' src="{{ asset('assets/images/free-delivary.png') }}">
+                            <img class='delivary-image' src="{{ asset('assets/images/delivary.png') }}">
 
                             <div class='animation'>
                                 <span class=''>ডেলিভারি চার্জ প্রযোজ্য। </span>
