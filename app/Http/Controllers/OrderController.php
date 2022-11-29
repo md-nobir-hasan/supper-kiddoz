@@ -75,8 +75,8 @@ class OrderController extends Controller
         $insert->address1 = $request->address1;
         $insert->phone = $request->phone;
         $insert->quantity = 1;
-        $insert->shipping_id = 1;
-        $insert->pamyment_methods = $request->pamyment_methods;
+        $insert->shipping_id = $request->shipping_id;
+        $insert->pamyment_methods = 1;
         $insert->payment_number = 1234;
         // = $request->payment_number;
         $order_number = 'ORD-'.strtoupper(Str::random(10));
@@ -125,10 +125,10 @@ class OrderController extends Controller
           $order_details['discount'] = $request->discount;
           $order_details['discount_taka'] = $discount;
           $order_details['qty'] = $request->quantity;
-          $order_details['payment_methdod'] = 'ক্যাশ অন ডেলিভারি';
+          $order_details['payment_methdod'] = 'হোম ডেলিভারি';
           $order_details['product_name'] = $request->product_title;
           $order_details['subtotal'] = $total;
-          $order_details['shipping'] = 0;
+          $order_details['shipping'] = $shipping_price;
           $order_details['client_name'] = $request->first_name;
           $order_details['client_phone'] = $request->phone;
           $order_details['client_address'] = $request->address1;

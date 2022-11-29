@@ -2,7 +2,8 @@
 </head>
 <body>
     <div class="row thank-div" style="background-color: #133196">
-        <div class="col-md-8 text-center">
+
+        <div class="col-md-8 text-center m-auto">
             <span><i class="fas fa-check-circle thank-icon"></i></span>
             <h2 class="thank-text offset-md-2">ধন্যবাদ অর্ডার করার জন্য 😊 খুব শীঘ্রই আপনার সাথে যোগাযোগ করা হবে। অথবা
                 যেকোনো প্রয়োজনে কল করুন {{ $company_contact->phone }}</h2>
@@ -16,13 +17,17 @@
 
     <div class="container-fluid">
         <div class="row order-receive-details m-1 pl-3">
-            <div class="col-md-6 border-bottom p-3 text-right">Order Number: <strong>{{ $order_number }}</strong></div>
-            <div class="col-md-6 border-bottom p-3">Your Name: <strong>{{ $client_name }}</strong></div>
-            <div class="col-md-6 border-bottom p-3 text-right">Your Phone: <strong>{{ $client_phone }}</strong></div>
-            <div class="col-md-6 border-bottom p-3">Your Address: <strong>{{ $client_address }}</strong></div>
-            <div class="col-md-6 border-bottom p-3 text-right">Date: <strong>{{ $date }} </strong></div>
-            <div class="col-md-6 border-bottom p-3">Total: <strong>{{ $total }}</strong></div>
-            <div class="col-md-6 border-bottom p-3">Payment Method: <strong>{{ $payment_methdod }}</strong></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 border-bottom p-3 text-right">Order Number: <strong>{{ $order_number }}</strong></div>
+            <div class="col-md-5 border-bottom p-3">Your Name: <strong>{{ $client_name }}</strong></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 border-bottom p-3 text-right">Your Phone: <strong>{{ $client_phone }}</strong></div>
+            <div class="col-md-5 border-bottom p-3">Your Address: <strong>{{ $client_address }}</strong></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 border-bottom p-3 text-right">Date: <strong>{{ $date }} </strong></div>
+            <div class="col-md-5 border-bottom p-3">Total: <strong>{{ $total + $shipping->price}}</strong></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 border-bottom p-3">Payment Method: <strong>{{ $payment_methdod }}</strong></div>
         </div>
 
         <h2 class="mt-5 order-details text-center">Order Details</h2>
@@ -54,12 +59,12 @@
 
             <div class="order-details-div border-bottom p-3">
                 <div class="order-details-text">Shipping: </div>
-                <div class="order-details-text">{{ $shipping }}৳</div>
+                <div class="order-details-text">{{ $shipping->price }}৳</div>
             </div>
 
             <div class="order-details-div border-bottom p-3">
                 <div class="order-details-text">Total: </div>
-                <div class="order-details-text">{{ $total }}৳</div>
+                <div class="order-details-text">{{ $total + $shipping->price }}৳</div>
             </div>
 
             <div class="order-details-div border-bottom p-3">
@@ -67,8 +72,8 @@
                 <div class="order-details-text">{{ $payment_methdod }}</div>
             </div>
             <div class="order-details-div border-bottom p-3">
-                <div class="order-details-text">You have to pay</div>
-                <div class="order-details-text">{{ $total }}৳</div>
+                <div class="order-details-text text-info">You have to pay</div>
+                <div class="order-details-text text-info">{{ $total+$shipping->price }}৳</div>
             </div>
         </div>
     </div>

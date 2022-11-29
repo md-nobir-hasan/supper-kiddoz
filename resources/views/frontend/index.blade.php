@@ -63,6 +63,10 @@
             font-size: 27px;
             color: white;
         }
+         input,select {
+            height: 40px;
+            font-size: 16px !important;
+        }
         /*end why us section */
 </style>
 </head>
@@ -245,17 +249,31 @@
                                                 </div>
 
                                                 <div class="col-md-12 mt-4">
-                                                    <label for="address" class="form-label">শিপিং</label>
+                                                    <label for="address" class="form-label">শিপিং চার্জ</label>
                                                 </div>
+                                                <select class="form-select" name="shipping_id">
+                                                    <option value="hidden">শিপিং এর এলাকা নির্বাচন করুন</option>
+                                                    @foreach ($shipping as $ship)
+                                                        <option value="{{$ship->id}}">{{$ship->type.' - ('.$ship->price}}৳)</option>
+                                                    @endforeach
+                                                </select>
+                                                {{-- shipping checkbox  --}}
+                                                {{-- <div class="col-md-12">
+                                                    <input type="checkbox" class="form-check-input ms-5" name="delivary_charge" id="delivary_charge1"> <label for="delivary_charge1" class="form-check-label">Inside Dhaka</label>
+                                                </div>
+                                                <div class="col-md-12 mt-1">
+                                                    <input type="checkbox" class="form-check-input ms-5" name="delivary_charge" id="delivary_charge2"> <label for="delivary_charge2" class="form-check-label">Outside of Dhaka</label>
+                                                </div> --}}
 
-                                                <div class="form-check payment-input">
+
+                                                {{-- <div class="form-check payment-input">
                                                     <input class="pamyment_method form-control form-check-input ml-3"
                                                         type="radio" name="pamyment_methods" id="checkbox3"
                                                         value="CashonDelivery" nobir='{{ $loop->index }}' checked>
                                                     <label class="form-check-label " for="checkbox3">
                                                         ক্যাশ অন ডেলিভারি
                                                     </label>
-                                                </div>
+                                                </div> --}}
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"

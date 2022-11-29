@@ -99,10 +99,6 @@
             width: 144px;
         }
 
-        input {
-            height: 40px;
-            font-size: 16px !important;
-        }
 
         textarea {
             height: 69px;
@@ -169,7 +165,7 @@
         /*end thank you page design*/
 
 
-       
+
         .footer {
             background-color: black;
             color: white;
