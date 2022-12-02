@@ -74,8 +74,16 @@
         height: 40px;
         font-size: 16px !important;
     }
-
     /*end why us section */
+
+    /* Review section  */
+    @media screen and (max-width:480px){
+        .reviews img{
+            width: 410px;
+        }
+    }
+    /* End review section  */
+
 </style>
 </head>
 
