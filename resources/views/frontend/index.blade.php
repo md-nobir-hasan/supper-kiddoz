@@ -85,6 +85,9 @@
         font-size: 40px;
         padding-bottom: 12px;
     }
+    .custom-shadow {
+        box-shadow: rgba(44, 204, 47, 0.2) 0px 4px 4px 0px;
+    }
     .reviews img{
         width: 500px;
 
@@ -376,10 +379,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 shadow border p-4 text-center">
+            <div class="col-md-6 custom-shadow border p-4 text-center">
                 <img src="{{asset('assets/images/reviews/r1.jpg')}}" alt="Review image">
             </div>
-            <div class="col-md-6 shadow border p-4 text-center">
+            <div class="col-md-6 custom-shadow border p-4 text-center">
                 <img src="{{asset('assets/images/reviews/r2.jpg')}}" alt="Review image">
             </div>
             <div class="col-md-6 shadow border p-4 text-center">
