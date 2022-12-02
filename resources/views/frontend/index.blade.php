@@ -329,6 +329,13 @@
                একসাথে পাচ্ছেন নিউব্রণ সেফটি/ক্যারি বেড + পিলো + ইউরিন মেট।
             </h1>
         </div>
+        <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
+            <a type="button" href="javascript:void(0)" class="btn btn-info w-50  product-order-btn m-auto"
+                                        id="{{ $product->id }}" data-bs-toggle="modal"
+                                        data-bs-target="#product-{{ $product->id }}"
+                                        style='font-size: 22px;background:#ff00f6;'>অর্ডার করুন
+            </a>
+        </div>
     </section>
 
     {{-- Why section-2  --}}
