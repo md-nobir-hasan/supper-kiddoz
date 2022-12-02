@@ -77,6 +77,10 @@
     /*end why us section */
 
     /* Review section  */
+    .reviews img{
+        width: 500px;
+        
+    }
     @media screen and (max-width:480px){
         .reviews img{
             width: 410px;
