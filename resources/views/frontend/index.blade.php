@@ -77,13 +77,21 @@
     /*end why us section */
 
     /* Review section  */
+    .reviews{
+        background: linear-gradient(#00ffe9ab,#af1ee9ba);
+
+    }
+    .reviews h2{
+        font-size: 40px;
+        padding-bottom: 12px;
+    }
     .reviews img{
         width: 500px;
-        
+
     }
-    @media screen and (max-width:480px){
+    @media screen and (max-width:500px){
         .reviews img{
-            width: 410px;
+            max-width: 395px;
         }
     }
     /* End review section  */
@@ -318,7 +326,7 @@
     <section class="why-us">
 
         <div class="row p-3 mb-5 rounded justify-content-md-center">
-            <h1 class="why-us-header">আমাদের থেকে কেনো কিনবেন ?? </h1>
+            <h2 class="why-us-header">আমাদের থেকে কেনো কিনবেন ?? </h2>
         </div>
 
         <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
@@ -363,17 +371,22 @@
     {{-- Review section  --}}
     <section class="reviews">
         <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Customer Reviews</h2>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-6 shadow border p-4 text-center">
-                <img class="border border-2 border-info" src="{{asset('assets/images/reviews/r1.jpg')}}" alt="review1">
+                <img src="{{asset('assets/images/reviews/r1.jpg')}}" alt="Review image">
             </div>
             <div class="col-md-6 shadow border p-4 text-center">
-                <img class="border border-2 border-info" src="{{asset('assets/images/reviews/r2.jpg')}}" alt="review1">
+                <img src="{{asset('assets/images/reviews/r2.jpg')}}" alt="Review image">
             </div>
             <div class="col-md-6 shadow border p-4 text-center">
-                <img class="border border-2 border-info" src="{{asset('assets/images/reviews/r3.jpg')}}" alt="review1">
+                <img src="{{asset('assets/images/reviews/r3.jpg')}}" alt="Review image">
             </div>
             <div class="col-md-6 shadow border p-4 text-center">
-                <img class="border border-2 border-info" src="{{asset('assets/images/reviews/r4.jpg')}}" alt="review1">
+                <img src="{{asset('assets/images/reviews/r4.jpg')}}" alt="Review image">
             </div>
         </div>
     </section>
