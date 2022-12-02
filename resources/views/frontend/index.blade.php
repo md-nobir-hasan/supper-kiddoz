@@ -1,75 +1,84 @@
 @include('frontend.layouts.header')
 <style>
-    .navbar{
+    .navbar {
         /* background: #0055cb; */
         background: linear-gradient(117deg, #7679c0, #4ce709);
     }
-    .after-navbar{
+
+    .after-navbar {
         background: #b60000;
         color: white;
         padding: 10px 5px 15px 5px
     }
+
     .text-wrap p {
         /* background-color: yellow; */
         font-weight: bold;
         /* padding: 9px; */
         font-size: 31px;
     }
+
     .after-video p {
         color: #ed00ff;
         padding: 13px;
         font-size: 31px;
     }
+
     .products .heading {
         font-weight: bold;
         color: red;
         /* background: #3bcb29; */
     }
- /*Why us section */
-        .why-us {
-            background-color: #b60000;
-        }
 
-        .why-us-emoji {
-            font-size: 45px;
-            display: block;
-            text-align: center;
-        }
+    /*Why us section */
+    .why-us {
+        background-color: #b60000;
+    }
 
-        .why-us-header {
-            text-align: center;
-            font-weight: bold;
-            font-size: 27px;
-            color: white;
-        }
+    .why-us-emoji {
+        font-size: 45px;
+        display: block;
+        text-align: center;
+    }
 
-        .why-us-div-des {
-            text-align: center;
-            font-weight: bold;
-            font-size: 27px;
-            color: #0b86ea;
-        }
+    .why-us-header {
+        text-align: center;
+        font-weight: bold;
+        font-size: 27px;
+        color: white;
+    }
 
-        .why-us-footer {
-            background-color: rgb(65, 9, 248);
-            text-align: center;
-            font-weight: bold;
-            font-size: 27px;
-        }
+    .why-us-div-des {
+        text-align: center;
+        font-weight: bold;
+        font-size: 27px;
+        color: #0b86ea;
+    }
 
-        .why-us-footer-text {
-            text-align: center;
-            font-weight: bold;
-            font-size: 27px;
-            color: white;
-        }
-         input,select {
-            height: 40px;
-            font-size: 16px !important;
-        }
-        /*end why us section */
+    .why-us-footer {
+        background-color: rgb(65, 9, 248);
+        text-align: center;
+        font-weight: bold;
+        font-size: 27px;
+    }
+
+    .why-us-footer-text {
+        text-align: center;
+        font-weight: bold;
+        font-size: 27px;
+        color: white;
+    }
+
+    input,
+    select {
+        height: 40px;
+        font-size: 16px !important;
+    }
+
+    /*end why us section */
 </style>
 </head>
+
 <body>
 
     <!-- Navbar  -->
@@ -118,8 +127,8 @@
             <p>অত্যন্ত নরম এবং আকর্ষণীয় বেবি বেড​। </p>
         </div> --}}
 
-        {{-- Order button out of product box  --}}
-        {{-- <div class="row text-center ">
+    {{-- Order button out of product box  --}}
+    {{-- <div class="row text-center ">
             <div class="col-md-4 text-center justify-self-center offset-md-4">
                 <a href="" class="btn cart-btn text-center order-text product-order-btn" id="1"
                     data-bs-toggle="modal" data-bs-target="#product-1"
@@ -254,7 +263,8 @@
                                                 <select class="form-select" name="shipping_id">
                                                     <option value="hidden">শিপিং এর এলাকা নির্বাচন করুন</option>
                                                     @foreach ($shipping as $ship)
-                                                        <option value="{{$ship->id}}">{{$ship->type.' - ('.$ship->price}}৳)</option>
+                                                        <option value="{{ $ship->id }}">
+                                                            {{ $ship->type . ' - (' . $ship->price }}৳)</option>
                                                     @endforeach
                                                 </select>
                                                 {{-- shipping checkbox  --}}
@@ -302,7 +312,8 @@
         <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
             <span class="why-us-emoji">🚗</span>
             <h1 class="why-us-div-des">
-                নবজাতক নিরাপদ ভ্রমণ বিছানা আমাদের এই সেফটি বেড এর সাথে পাচ্ছেন সোনামণির জন্য অত্যন্ত প্রয়োজনীয় ইউরিন ম্যাট ও পিলো। </h1>
+                নবজাতক নিরাপদ ভ্রমণ বিছানা আমাদের এই সেফটি বেড এর সাথে পাচ্ছেন সোনামণির জন্য অত্যন্ত প্রয়োজনীয় ইউরিন
+                ম্যাট ও পিলো। </h1>
         </div>
         <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
             <span class="why-us-emoji">😊</span>
@@ -313,36 +324,47 @@
         <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
             <span class="why-us-emoji">✅</span>
             <h1 class="why-us-div-des">
-               এটি ১০০% কটন কাপর দিয়ে তৈরি এবং ভিতরে নরম ফাইবার তুলা, যা সহজেই শুকিয়ে যায়।
+                এটি ১০০% কটন কাপর দিয়ে তৈরি এবং ভিতরে নরম ফাইবার তুলা, যা সহজেই শুকিয়ে যায়।
             </h1>
         </div>
         <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
             <span class="why-us-emoji">⚡</span>
             <h1 class="why-us-div-des">
-               যেহেতু নবজাতকের জন্য তৈরী কোয়ালিটি তে কোনো কম্প্রোমাইস করা হয়নি।
+                যেহেতু নবজাতকের জন্য তৈরী কোয়ালিটি তে কোনো কম্প্রোমাইস করা হয়নি।
             </h1>
 
         </div>
         <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
             <span class="why-us-emoji">😍</span>
             <h1 class="why-us-div-des">
-               একসাথে পাচ্ছেন নিউব্রণ সেফটি/ক্যারি বেড + পিলো + ইউরিন মেট।
+                একসাথে পাচ্ছেন নিউব্রণ সেফটি/ক্যারি বেড + পিলো + ইউরিন মেট।
             </h1>
         </div>
         <div class="row shadow-lg p-3 mb-5 bg-body rounded justify-content-md-center">
             <a type="button" href="javascript:void(0)" class="btn btn-info w-50  product-order-btn m-auto"
-                                        id="{{ $product->id }}" data-bs-toggle="modal"
-                                        data-bs-target="#product-{{ $product->id }}"
-                                        style='font-size: 22px;background:#ff00f6;'>অর্ডার করুন
+                id="{{ $product->id }}" data-bs-toggle="modal" data-bs-target="#product-{{ $product->id }}"
+                style='font-size: 22px;background:#ff00f6;'>অর্ডার করুন
             </a>
         </div>
     </section>
 
-    {{-- Why section-2  --}}
-
-
-
-    </div>
+    {{-- Review section  --}}
+    <section class="reviews">
+        <div class="row">
+            <div class="col-md-6 shadow border p-4 text-center">
+                <img class="border border-2 border-info" src="{{asset('assets/images/reviews/r1.jpg')}}" alt="review1">
+            </div>
+            <div class="col-md-6 shadow border p-4 text-center">
+                <img class="border border-2 border-info" src="{{asset('assets/images/reviews/r2.jpg')}}" alt="review1">
+            </div>
+            <div class="col-md-6 shadow border p-4 text-center">
+                <img class="border border-2 border-info" src="{{asset('assets/images/reviews/r3.jpg')}}" alt="review1">
+            </div>
+            <div class="col-md-6 shadow border p-4 text-center">
+                <img class="border border-2 border-info" src="{{asset('assets/images/reviews/r4.jpg')}}" alt="review1">
+            </div>
+        </div>
+    </section>
 
     <div>
         <div class="row justify-content-center social-icon">
@@ -376,8 +398,6 @@
             Powdered by <span class="footer-text">Business Mind Academy</span>
         </p>
     </footer>
-
-    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
