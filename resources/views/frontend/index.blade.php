@@ -74,31 +74,77 @@
         height: 40px;
         font-size: 16px !important;
     }
+
     /*end why us section */
 
     /* Review section  */
-    .reviews{
-        background: linear-gradient(#00ffe9ab,#af1ee9ba);
+    .reviews {
+        background: linear-gradient(#00ffe9ab, #af1ee9ba);
 
     }
-    .reviews h2{
+
+    .reviews h2 {
         font-size: 40px;
         padding-bottom: 12px;
     }
+
     .custom-shadow {
         box-shadow: rgba(44, 204, 47, 0.2) 0px 4px 4px 0px;
     }
-    .reviews img{
+
+    .reviews img {
         width: 500px;
 
     }
-    @media screen and (max-width:500px){
-        .reviews img{
+
+    @media screen and (max-width:500px) {
+        .reviews img {
             max-width: 395px;
         }
     }
+
     /* End review section  */
 
+    /* Animation  */
+    .text-animation {
+
+        cursor: pointer;
+        background-color: #760808b8;
+        color: white;
+        border-radius: 27%;
+        font-size: 28px;
+    }
+
+    /* .animation {
+            animation-name: nobir;
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-iteration-count: infinite;
+            text-align: center;
+            border: 1px solid;
+            margin: 0px 5px 5px 12px;
+            color: #f8ac00;
+            background: #2828d4;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            padding: 0px 8px 0px 8px;
+
+        } */
+    .animation1 {
+        animation: pulse 0.6s ease-out infinite;
+        text-align: center;
+        border: 1px solid;
+        margin: 0px 5px 5px 12px;
+        color: #f8ac00;
+        background: #2828d4;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        padding: 0px 8px 0px 8px;
+    }
+
+    /*End Animation */
 </style>
 </head>
 
@@ -202,19 +248,17 @@
                         </div>
                         <div class="row text-center">
                             <div class="col-md-4 offset-md-4">
-                                <span id="heart" role="img" aria-label="heart"
-                                    class="free-delivary  text-animation"
-                                    style='background-color:#00ebff; color:#1a23ac;border-radius: 27%;font-size: 28px;'>অফার
+                                <span class="free-delivary text-animation ">অফার
                                     প্রাইস
                                     ৯৫০ টাকা <br>
                                 </span>
                             </div>
                         </div>
-                        <div class='delivary-img-section'>
+                        <div class='delivary-img-section rounded'>
 
                             <img class='delivary-image' src="{{ asset('assets/images/delivary.png') }}">
 
-                            <div class='animation'>
+                            <div class='animation1 rounded'>
                                 <span class=''>ডেলিভারি চার্জ প্রযোজ্য। </span>
                             </div>
 
@@ -380,16 +424,16 @@
         </div>
         <div class="row">
             <div class="col-md-6 custom-shadow border p-4 text-center">
-                <img src="{{asset('assets/images/reviews/r1.jpg')}}" alt="Review image">
+                <img src="{{ asset('assets/images/reviews/r1.jpg') }}" alt="Review image">
             </div>
             <div class="col-md-6 custom-shadow border p-4 text-center">
-                <img src="{{asset('assets/images/reviews/r2.jpg')}}" alt="Review image">
+                <img src="{{ asset('assets/images/reviews/r2.jpg') }}" alt="Review image">
             </div>
             <div class="col-md-6 shadow border p-4 text-center">
-                <img src="{{asset('assets/images/reviews/r3.jpg')}}" alt="Review image">
+                <img src="{{ asset('assets/images/reviews/r3.jpg') }}" alt="Review image">
             </div>
             <div class="col-md-6 shadow border p-4 text-center">
-                <img src="{{asset('assets/images/reviews/r4.jpg')}}" alt="Review image">
+                <img src="{{ asset('assets/images/reviews/r4.jpg') }}" alt="Review image">
             </div>
         </div>
     </section>

@@ -63,10 +63,7 @@
 
 
 
-        .text-animation {
-            animation: pulse 0.6s ease-out infinite;
-            cursor: pointer;
-        }
+
 
         @keyframes pulse {
             0% {
@@ -176,22 +173,7 @@
 
         /*Animation*/
         /*rotate animation */
-        .animation {
-            animation-name: nobir;
-            animation-duration: 2s;
-            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-            animation-iteration-count: infinite;
-            text-align: center;
-            border: 1px solid;
-            margin: 0px 5px 5px 12px;
-            color: black;
-            background: #F8AC00;
-            font-size: 25px;
-            display: flex;
-            align-items: center;
-            padding: 0px 8px 0px 8px;
-
-        }
+        
 
         @keyframes nobir {
             from {
