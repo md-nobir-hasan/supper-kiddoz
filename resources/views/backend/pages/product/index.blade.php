@@ -27,8 +27,8 @@
                     <div class="card-body">
                         @include('backend.partial.flush-message')
 
-                        <div class="table table-responsive">
-                            <table id="table" class="table-responsive">
+                        <div class="table-responsive">
+                            <table id="table" class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th>S.N.</th>

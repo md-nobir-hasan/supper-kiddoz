@@ -6,7 +6,7 @@
     @php
         $company_info = App\Models\CompanyInfo::first();
     @endphp
-    <title> @yield('title', 'JARIFTRADING') </title>
+    <title> @yield('title', 'SUPPER KIDDOZ') </title>
 
     <!-- Favicon-->
     <link rel="icon" href="" type="image/png">
